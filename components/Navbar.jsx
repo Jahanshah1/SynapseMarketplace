@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link href='/'>
                 <div className='flex-center md:hidden cursor-pointer' onClick={() => {}}>
         
-                    <p className='dark:text-white text-nft-black-1 font-semibold text-lg ml-1 font-poppins'>Synapse Marketplace</p>
+                    <p className='dark:text-white text-nft-black-1 font-semibold text-lg ml-1 font-poppins'>Synapse</p>
                 </div>
             </Link>
             <Link href='/'>
