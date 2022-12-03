@@ -6,30 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./";
 
-import "@rainbow-me/rainbowkit/styles.css";
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 import images from "../assets";
 
-const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
-);
-const { connectors } = getDefaultWallets({
-  appName: "Synapse MarketPlace",
-  chains,
-});
-const wagmiClient = createClient({
-  autoConnect: true,
-  connectors,
-  provider,
-});
+import { useWeb3React } from "@web3-react/core";
+import connector from "../services/connector";
+
 
 const MenuItems = ({ isMobile, active, setActive }) => {
+
+   
   const generateLink = (i) => {
     switch (i) {
       case 0:
@@ -90,6 +76,9 @@ const ButtonGroup = ({ setActive, router }) => {
 };
 
 const Navbar = () => {
+
+
+
   const { theme, setTheme } = useTheme();
   const [active, setActive] = useState("Explore NFTs");
   const router = useRouter();
