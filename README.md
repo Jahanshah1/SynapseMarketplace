@@ -12,19 +12,23 @@ home page / Explore NFTs page (dark mode)
 
 <br />
 
-home page / Explore NFTs page (light mode)
+### home page / Explore NFTs page (light mode)
 <img width="1470" alt="Screenshot 2022-12-04 at 12 06 29 AM" src="https://user-images.githubusercontent.com/92823408/205456609-7aa885f1-c4ba-4cdb-a697-458fe00889d2.png">
 
-Creating New NFTs page 
+### Creating New NFTs page 
 <img width="900" alt="Screenshot 2022-12-04 at 12 13 51 AM" src="https://user-images.githubusercontent.com/92823408/205456799-e59eb438-7a97-4415-ace5-463d41a5c416.png">
+<br />
 
-switiching through different networks
+### switiching through different networks
 <img width="378" alt="Screenshot 2022-12-04 at 12 11 55 AM" src="https://user-images.githubusercontent.com/92823408/205456847-8e7144e4-9450-4a16-80f8-8162f6aa6862.png">
 
-Proving your identity using WorldCoin 
+<br />
+### Proving your identity using WorldCoin 
 <img width="1470" alt="Screenshot 2022-12-04 at 12 16 41 AM" src="https://user-images.githubusercontent.com/92823408/205456890-0725e19e-2701-436c-a087-185c7da2a3a2.png">
 
 
+### Proving your identitiy using Worldcoin app 
+<img width="374" alt="Screenshot 2022-12-04 at 12 00 32 AM" src="https://user-images.githubusercontent.com/92823408/205457117-a2ab036b-13e8-470f-9ac2-a6f69cf2d4d2.png">
 
 
 
