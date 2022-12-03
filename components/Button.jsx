@@ -9,4 +9,4 @@ const Button = ({ btnName, classStyles, handleClick}) => {
   )
 }
 
-export default Button
+export default Button;
