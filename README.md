@@ -47,4 +47,33 @@ There are many NFT marketplaces but the developers/creators are not able to aird
 Transacrion page link : https://goerli.etherscan.io/tx/0xdc375468fb8786fd51a75785b59226f6df236c4ea5ceb8cc811119768976aff6
 contract address : 0xcc4f5080ff23c512d1cccbf575bc692812af4a86
 
+## Tech Stack used 
+- Javascript 
+- Next.js
+- Tailwind 
+- HTML/CSS
+- Solidity 
+- OpenZeppelin
+- Worldcoin
+- Rainbow kit 
+
+## Run locally 
+Clone the project 
+```bash 
+git clone https://github.com/Jahanshah1/SynapseMarketplace
+```
+Go to client directory 
+```bash 
+cd client
+```
+Install dependencies 
+```bash 
+npm i 
+```
+start localhost 
+```bash 
+npm start
+```
+If there are any problems please refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md 
+Or contact me shahjahanrajan@gmail.com
 
