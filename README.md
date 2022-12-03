@@ -57,6 +57,8 @@ contract address : 0xcc4f5080ff23c512d1cccbf575bc692812af4a86
 - Worldcoin
 - Rainbow kit 
 
+<br />
+
 ## Run locally 
 Clone the project 
 ```bash 
@@ -74,6 +76,15 @@ start localhost
 ```bash 
 npm start
 ```
-If there are any problems please refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md 
-Or contact me shahjahanrajan@gmail.com
+If there are any problems please contact me shahjahanrajan@gmail.com
 
+<br />
+
+## Future Plans 
+- [x] Create an interactive and dynamic UI
+- [x] Create a smart contract for the marketplace
+- [x] integrate Privacy-Preserving Proof-of-Personhood Protocol (PPPoPP) using Worldcoin
+- [ ] Fix bugs and glitches in UI
+- [ ] Fully integrate front-end with smart contracts making it a full fletched web 3 app
+- [ ] Add cross chain compatibilty for bridging NFTs 
+   
