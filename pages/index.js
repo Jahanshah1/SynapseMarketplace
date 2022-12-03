@@ -7,7 +7,9 @@ import {CreatorCard} from '../components';
 import {NFTcard} from '../components';
 import {Button} from '../components';
 import { useRouter } from "next/router";
-import SocialLogin from "@biconomy/web3-auth";
+import dynamic from "next/dynamic";
+
+import { WidgetProps } from '@worldcoin/id';
 
 
 
@@ -15,20 +17,35 @@ import images from '../assets';
 import {makeId} from '../utils/makeId' 
 
 
+const WorldIDWidget = dynamic(() => import("@worldcoin/id").then((mod) => mod.WorldIDWidget), { ssr: false });
+
+const widgetProps = {
+  actionId: "wid_staging_PCNQeDC5CX",
+  signal: "user-id-1",
+  enableTelemetry: true,
+  appName: "ConfCon",
+  signalDescription: "Get your ticket to ConfCon 2023",
+  theme: "dark",
+  debug: true, // Recommended **only** for development
+  onSuccess: (result) => console.log(result),
+  onError: ({ code, detail }) => console.log({ code, detail }),
+  onInitSuccess: () => console.log("Init successful"),
+  onInitError: (error) => console.log("Error while initialization World ID", error),
+};
 
 
 
-const Home = async () => {
+const Home = () => {
   const parentRef = useRef(null);
   const scrollRef = useRef(null);
   const [active, setActive] = useState("");
   const router = useRouter();
 
-  const socialLoginSDK = new SocialLogin();
-  await socialLoginSDK.init('0x5EE20D13b84D33fF40Fe21A60B07C2Fb43DC2537'); // Enter the network id in hex) parameter
-  socialLoginSDK.showConnectModal();
-  socialLoginSDK.showWallet();
+ 
 
+useEffect(() => {
+  console.log("jsh");
+}, []);
 
 
   return(
@@ -48,8 +65,7 @@ const Home = async () => {
       <Banner parentStyles='justify-start mb-6 h-72 sm:60 p-12 xs:4 xs:44 rounded-3xl' 
       childStyles='md:text-4xl sm:text-2xl xs-text-xl text-left'
       name='Discover new NFTs'/>
-   
-
+ <WorldIDWidget {...widgetProps} />
       <div>
 
         <h1 className='font-poppins dark:text-white text-nft-black-1 text-xl minlg:text-4xl font-semibold ml-4 xs:ml-0 mt-10'>
@@ -75,6 +91,7 @@ const Home = async () => {
             {[1,2,3,4,5].map((i) => (
               <NFTcard key={`nft-${i}`} nft={{i, name:`nifty NFT ${i}`, seller:`0x${makeId(3)}...${makeId(4)}`, owner:`0x${makeId(3)}...${makeId(4)}`, description:'NFT on sale', price:(10-i *0.534)}} />
             ))} 
+  
           </div>
       </div>
     </div>
