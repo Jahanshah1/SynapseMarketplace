@@ -55,17 +55,16 @@ useEffect(() => {
     <div className='w-full minmd:w-4/5 '>
     <div className='flexCenter mb-3'>  <Button
         btnName="Create"
-        btnType="primary"
-        classStyles="mx-2 rounded-xl"
+        classStyles="mx-2 rounded-xl mb-2"
         handleClick={() => {
-          setActive('je');
+          setActive('');
           router.push('/create-nft');
         }}
       /></div>
       <Banner parentStyles='justify-start mb-6 h-72 sm:60 p-12 xs:4 xs:44 rounded-3xl' 
       childStyles='md:text-4xl sm:text-2xl xs-text-xl text-left'
       name='Discover new NFTs'/>
-        <p className=' font-poppins dark:text-white text-nft-black-1 flex justify-center mb-4 text-2xl'>Want a free NFT? claim it by veryifing yourself</p>
+        <p className=' font-poppins dark:text-white text-nft-black-1 flex justify-center mb-4 text-2xl'>Want a free NFT? Claim it by veryifing yourself</p>
       <div className='flex justify-center'>
         <WorldIDWidget {...widgetProps} />
       </div>

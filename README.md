@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+# Synapse NFT marketplace
+A marketplace with unique identification using Privacy-Preserving Proof-of-Personhood Protocol (PPPoPP) 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Purpose/the problem it solves
+There are many NFT marketplaces but the developers/creators are not able to airdrop or giveaway their products because of the fact that a single user can create multiple accounts in order to claim the product. Using Worldcoin this problem can be tackled as it uses Privacy-Preserving Proof-of-Personhood Protocol (PPPoPP) which verifies if the user has executed this task before or not. Essentially this marketplace can also prevent users from creating multiple accounts and spamming. 
 
-Try running some of the following tasks:
+## Screenshots of the Dapp
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+
