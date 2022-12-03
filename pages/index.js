@@ -65,7 +65,10 @@ useEffect(() => {
       <Banner parentStyles='justify-start mb-6 h-72 sm:60 p-12 xs:4 xs:44 rounded-3xl' 
       childStyles='md:text-4xl sm:text-2xl xs-text-xl text-left'
       name='Discover new NFTs'/>
- <WorldIDWidget {...widgetProps} />
+        <p className=' font-poppins dark:text-white text-nft-black-1 flex justify-center mb-4 text-2xl'>Want a free NFT? claim it by veryifing yourself</p>
+      <div className='flex justify-center'>
+        <WorldIDWidget {...widgetProps} />
+      </div>
       <div>
 
         <h1 className='font-poppins dark:text-white text-nft-black-1 text-xl minlg:text-4xl font-semibold ml-4 xs:ml-0 mt-10'>
