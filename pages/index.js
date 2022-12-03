@@ -7,6 +7,8 @@ import {CreatorCard} from '../components';
 import {NFTcard} from '../components';
 import {Button} from '../components';
 import { useRouter } from "next/router";
+import SocialLogin from "@biconomy/web3-auth";
+
 
 
 import images from '../assets';
@@ -16,13 +18,19 @@ import {makeId} from '../utils/makeId'
 
 
 
-const Home = () => {
+const Home = async () => {
   const parentRef = useRef(null);
   const scrollRef = useRef(null);
   const [active, setActive] = useState("");
   const router = useRouter();
 
-console.log(makeId(3))
+  const socialLoginSDK = new SocialLogin();
+  await socialLoginSDK.init('0x5EE20D13b84D33fF40Fe21A60B07C2Fb43DC2537'); // Enter the network id in hex) parameter
+  socialLoginSDK.showConnectModal();
+  socialLoginSDK.showWallet();
+
+
+
   return(
 
   <div className='flex justify-center sm:px-4 px-12'>
