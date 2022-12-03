@@ -5,6 +5,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.blue-glassmorphism {
+/* From https://css.glass */
+background: rgba(0, 8, 55, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(0, 8, 55, 0.3);
+}
+.nft-gradient-2 {
+    background-image: linear-gradient(to right, #0045ac, #4548c9, #7846e1, #ac38f3, #e200ff);
+}
+
 .nft-gradient {
    background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
 }

@@ -14,15 +14,18 @@ const Home = () => {
   const scrollRef = useRef(null);
 console.log(makeId(3))
   return(
+
   <div className='flex justify-center sm:px-4 px-12'>
+
     <div className='w-full minmd:w-4/5 '>
       <Banner parentStyles='justify-start mb-6 h-72 sm:60 p-12 xs:4 xs:44 rounded-3xl' 
       childStyles='md:text-4xl sm:text-2xl xs-text-xl text-left'
       name='Discover new NFTs'/>
+   
 
       <div>
 
-        <h1 className='font-poppins dark:text-white text-nft-black-1 text-xl minlg:text-4xl font-semibold ml-4 xs:ml-0'>
+        <h1 className='font-poppins dark:text-white text-nft-black-1 text-xl minlg:text-4xl font-semibold ml-4 xs:ml-0 mt-10'>
           Top Sellers
         </h1>
 
@@ -38,7 +41,7 @@ console.log(makeId(3))
 
         <div className='flexBetween mx-4 xs:mx0 minlg:mx-8'>
           <h1 className='font-poppins dark:text-white text-nft-black-1 text-xl minlg:text-4xl font-semibold ml-4 sm:mb-4 flex-1'>Top NFTs</h1>
-          <div>Search bar</div>
+          <input type='text' placeholder='search for nfts' className=' rounded-2xl p-2 outline-none text-white border-none text-sm blue-glassmorphism'/>
         </div>
         
           <div className='mt-3 w-full justify-start flex'>
