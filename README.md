@@ -6,9 +6,10 @@ There are many NFT marketplaces but the developers/creators are not able to aird
 
 ## Screenshots of the Dapp
 
-home page (dark mode)
-<img width="1470" alt="Screenshot 2022-12-04 at 12 06 22 AM" src="https://user-images.githubusercontent.com/92823408/205456580-6a405096-416f-4710-8054-dfde8bf819aa.png">
+home page / Explore NFTs page (dark mode)
+<img width="1470" alt="Screenshot 2022-12-04 at 12 11 33 AM" src="https://user-images.githubusercontent.com/92823408/205456715-f4be9c95-a024-4918-a295-182217b2011f.png">
+
 <br />
 
-home page (light mode)
+home page / Explore NFTs page (light mode)
 <img width="1470" alt="Screenshot 2022-12-04 at 12 06 29 AM" src="https://user-images.githubusercontent.com/92823408/205456609-7aa885f1-c4ba-4cdb-a697-458fe00889d2.png">
