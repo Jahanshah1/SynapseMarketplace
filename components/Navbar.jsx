@@ -9,8 +9,7 @@ import { Button } from "./";
 
 import images from "../assets";
 
-import { useWeb3React } from "@web3-react/core";
-import connector from "../services/connector";
+
 
 
 const MenuItems = ({ isMobile, active, setActive }) => {
@@ -57,24 +56,28 @@ const MenuItems = ({ isMobile, active, setActive }) => {
 const ButtonGroup = ({ setActive, router }) => {
   const hasConnected = false;
 
+
   return hasConnected ? (
-    <Button
-      btnName="create"
-      classStyles="mx-2 rounded-xl"
-      handleClick={() => {
-        setActive("");
-        router.push("/create-nft");
-      }}
-    />
+    <div className="flexCenter">
+      <Button
+        btnName="Create"
+        btnType="primary"
+        classStyles="mx-2 rounded-xl"
+        handleClick={() => {
+          setActive('');
+          router.push('/create-nft');
+        }}
+      />
+    </div>
   ) : (
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <ConnectButton />
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <Button
+      btnName="Connect"
+      btnType="outline"
+      classStyles="mx-2 rounded-lg"
+      handleClick={() => {}}
+    />
   );
 };
-
 const Navbar = () => {
 
 
