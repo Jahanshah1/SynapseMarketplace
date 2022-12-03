@@ -106,7 +106,7 @@ const ButtonGroup = ({ setActive, router }) => {
   ) : (
     <WagmiConfig client={wagmiClient}>
     <RainbowKitProvider chains={chains}>
-      <ConnectButton />
+      <ConnectButton showBalance={false} />
     </RainbowKitProvider>
   </WagmiConfig>
   );
