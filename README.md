@@ -82,7 +82,7 @@ npm i
 ```
 start localhost 
 ```bash 
-npm start
+npm run dev
 ```
 If there are any problems please contact me shahjahanrajan@gmail.com
 
