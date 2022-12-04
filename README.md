@@ -33,7 +33,7 @@ There are many NFT marketplaces but the developers/creators are not able to aird
 
 
 
-<br />
+
 
 ## Screenshots of Smart Contract
 
