@@ -88,11 +88,12 @@ If there are any problems please contact me shahjahanrajan@gmail.com
 
 <br />
 
-## Future Plans 
+## Future Plans ( Phase 1 )
 - [x] Create an interactive and dynamic UI
 - [x] Create a smart contract for the marketplace
 - [x] integrate Privacy-Preserving Proof-of-Personhood Protocol (PPPoPP) using Worldcoin
 - [ ] Fix bugs and glitches in UI
 - [ ] Fully integrate front-end with smart contracts making it a full fletched web 3 app
 - [ ] Add cross chain compatibilty for bridging NFTs 
+- [ ] Adding Dynamic NFTs
    
